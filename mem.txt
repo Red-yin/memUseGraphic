@@ -1,0 +1,297 @@
+[H[JMem: 451060K used, 7244K free, 134868K shrd, 4568K buff, 169960K cached
+CPU:  25% usr   6% sys   0% nic  68% idle   0% io   0% irq   0% sirq
+Load average: 5.74 4.87 4.44 1/298 24723
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[0m
+ 1032  1022 root     S     686m 153%  18% vispeech
+15028     1 root     S    1331m 297%   9% {mixpad_gui} /oem/app/flutter-gui/gui_
+24723 24722 root     R     2424   1%   2% top -n 1
+ 1033  1022 root     S    2302m 514%   0% vifamily
+ 1712     1 root     S    1887m 421%   0% /oem/ember-host/bin/ember-host -t 1
+ 1764  1712 root     S    1686m 376%   0% /oem/ember-host/bin/ember-host -t 1
+ 2873  1022 root     S    1363m 304%   0% mixpad_music
+ 1029  1022 root     S    1150m 257%   0% system_manager
+ 1030  1022 root     S     944m 211%   0% vicenter
+ 1034  1022 root     S     596m 133%   0% guiservice
+ 1031  1022 root     S     528m 118%   0% audio_manager
+  693     1 root     S     244m  54%   0% /usr/bin/adbd
+ 1001     1 root     S    77928  17%   0% /oem/ember-host/bin/host_http_ota
+ 1022     1 root     S    76688  17%   0% ./monitor
+ 1007     1 root     S    75684  16%   0% proxy_system_daemon
+  619     1 root     S    71916  16%   0% /usr/sbin/ntpd -g
+ 1136     1 root     S     5912   1%   0% wpa_supplicant -B -i wlan0 -c /userdat
+  631     1 root     S     5312   1%   0% /usr/sbin/sshd
+24346   944 root     S     5088   1%   0% sleep 180
+24601 15029 root     S     5088   1%   0% sleep 30
+vispeech:VmRSS=49628;VmData=684960
+vifamily:VmRSS=33652;VmData=2344644
+/oem/app/flutter-gui/gui_program/mixpad_gui:VmRSS=117596;VmData=1241568
+system_manager:VmRSS=7088;VmData=1164152
+vicenter:VmRSS=16356;VmData=959488
+audio_manager:VmRSS=6168;VmData=527564
+guiservice:VmRSS=5128;VmData=598900
+mixpad_music:VmRSS=15420;VmData=1386444
+/oem/ember-host/bin/ember-host:VmRSS=2344;VmData=1714144
+[H[JMem: 451280K used, 7024K free, 134872K shrd, 4568K buff, 169964K cached
+CPU:  20% usr   6% sys   0% nic  72% idle   0% io   0% irq   0% sirq
+Load average: 5.68 4.88 4.44 1/296 24788
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[0m
+ 1032  1022 root     S     686m 153%  14% vispeech
+15028     1 root     S    1331m 297%   7% {mixpad_gui} /oem/app/flutter-gui/gui_
+ 1712     1 root     S    1887m 421%   2% /oem/ember-host/bin/ember-host -t 1
+24788 24722 root     R     2424   1%   2% top -n 1
+  724     2 root     SW       0   0%   2% [ksdioirqd/mmc0]
+  750     2 root     SW       0   0%   2% [RTW_RECV_THREAD]
+ 1033  1022 root     S    2302m 514%   0% vifamily
+ 1764  1712 root     S    1686m 376%   0% /oem/ember-host/bin/ember-host -t 1
+ 2873  1022 root     S    1363m 304%   0% mixpad_music
+ 1029  1022 root     S    1150m 257%   0% system_manager
+ 1030  1022 root     S     944m 211%   0% vicenter
+ 1034  1022 root     S     596m 133%   0% guiservice
+ 1031  1022 root     S     528m 118%   0% audio_manager
+  693     1 root     S     244m  54%   0% /usr/bin/adbd
+ 1001     1 root     S    77928  17%   0% /oem/ember-host/bin/host_http_ota
+ 1022     1 root     S    76688  17%   0% ./monitor
+ 1007     1 root     S    75684  16%   0% proxy_system_daemon
+  619     1 root     S    71916  16%   0% /usr/sbin/ntpd -g
+ 1136     1 root     S     5912   1%   0% wpa_supplicant -B -i wlan0 -c /userdat
+  631     1 root     S     5312   1%   0% /usr/sbin/sshd
+vispeech:VmRSS=49628;VmData=684960
+vifamily:VmRSS=33652;VmData=2344644
+/oem/app/flutter-gui/gui_program/mixpad_gui:VmRSS=117596;VmData=1241568
+system_manager:VmRSS=7088;VmData=1164152
+vicenter:VmRSS=16356;VmData=959488
+audio_manager:VmRSS=6168;VmData=527564
+guiservice:VmRSS=5128;VmData=598900
+mixpad_music:VmRSS=15420;VmData=1386444
+/oem/ember-host/bin/ember-host:VmRSS=2344;VmData=1714144
+[H[JMem: 451068K used, 7236K free, 134876K shrd, 4568K buff, 169968K cached
+CPU:  19% usr   8% sys   0% nic  71% idle   0% io   0% irq   0% sirq
+Load average: 5.68 4.88 4.44 1/296 24849
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[0m
+15028     1 root     S    1331m 297%  10% {mixpad_gui} /oem/app/flutter-gui/gui_
+ 1032  1022 root     S     686m 153%  10% vispeech
+24849 24722 root     R     2424   1%   4% top -n 1
+ 1712     1 root     S    1887m 421%   2% /oem/ember-host/bin/ember-host -t 1
+24447     2 root     SW<      0   0%   2% [kworker/u9:0]
+ 1033  1022 root     S    2302m 514%   0% vifamily
+ 1764  1712 root     S    1686m 376%   0% /oem/ember-host/bin/ember-host -t 1
+ 2873  1022 root     S    1363m 304%   0% mixpad_music
+ 1029  1022 root     S    1150m 257%   0% system_manager
+ 1030  1022 root     S     944m 211%   0% vicenter
+ 1034  1022 root     S     596m 133%   0% guiservice
+ 1031  1022 root     S     528m 118%   0% audio_manager
+  693     1 root     S     244m  54%   0% /usr/bin/adbd
+ 1001     1 root     S    77928  17%   0% /oem/ember-host/bin/host_http_ota
+ 1022     1 root     S    76688  17%   0% ./monitor
+ 1007     1 root     S    75684  16%   0% proxy_system_daemon
+  619     1 root     S    71916  16%   0% /usr/sbin/ntpd -g
+ 1136     1 root     S     5912   1%   0% wpa_supplicant -B -i wlan0 -c /userdat
+  631     1 root     S     5312   1%   0% /usr/sbin/sshd
+24346   944 root     S     5088   1%   0% sleep 180
+vispeech:VmRSS=49628;VmData=684960
+vifamily:VmRSS=33652;VmData=2344644
+/oem/app/flutter-gui/gui_program/mixpad_gui:VmRSS=117596;VmData=1241568
+system_manager:VmRSS=7088;VmData=1164152
+vicenter:VmRSS=16356;VmData=959488
+audio_manager:VmRSS=6168;VmData=527564
+guiservice:VmRSS=5128;VmData=598900
+mixpad_music:VmRSS=15420;VmData=1386444
+/oem/ember-host/bin/ember-host:VmRSS=2344;VmData=1714144
+[H[JMem: 451156K used, 7148K free, 134884K shrd, 4568K buff, 169976K cached
+CPU:  25% usr  10% sys   0% nic  64% idle   0% io   0% irq   0% sirq
+Load average: 5.68 4.88 4.44 2/296 24920
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[0m
+ 1032  1022 root     S     686m 153%  19% vispeech
+15028     1 root     S    1331m 297%   6% {mixpad_gui} /oem/app/flutter-gui/gui_
+ 1712     1 root     S    1887m 421%   2% /oem/ember-host/bin/ember-host -t 1
+24920 24722 root     R     2424   1%   2% top -n 1
+24447     2 root     SW<      0   0%   2% [kworker/u9:0]
+ 1033  1022 root     S    2302m 514%   0% vifamily
+ 1764  1712 root     S    1686m 376%   0% /oem/ember-host/bin/ember-host -t 1
+ 2873  1022 root     S    1363m 304%   0% mixpad_music
+ 1029  1022 root     S    1150m 257%   0% system_manager
+ 1030  1022 root     S     944m 211%   0% vicenter
+ 1034  1022 root     S     596m 133%   0% guiservice
+ 1031  1022 root     S     528m 118%   0% audio_manager
+  693     1 root     S     244m  54%   0% /usr/bin/adbd
+ 1001     1 root     S    77928  17%   0% /oem/ember-host/bin/host_http_ota
+ 1022     1 root     S    76688  17%   0% ./monitor
+ 1007     1 root     S    75684  16%   0% proxy_system_daemon
+  619     1 root     S    71916  16%   0% /usr/sbin/ntpd -g
+ 1136     1 root     S     5912   1%   0% wpa_supplicant -B -i wlan0 -c /userdat
+  631     1 root     S     5312   1%   0% /usr/sbin/sshd
+24346   944 root     S     5088   1%   0% sleep 180
+vispeech:VmRSS=49628;VmData=684960
+vifamily:VmRSS=33652;VmData=2344644
+/oem/app/flutter-gui/gui_program/mixpad_gui:VmRSS=117596;VmData=1241568
+system_manager:VmRSS=7088;VmData=1164152
+vicenter:VmRSS=16356;VmData=959488
+audio_manager:VmRSS=6168;VmData=527564
+guiservice:VmRSS=5128;VmData=598900
+mixpad_music:VmRSS=15420;VmData=1386444
+/oem/ember-host/bin/ember-host:VmRSS=2344;VmData=1714144
+[H[JMem: 451664K used, 6640K free, 134884K shrd, 4568K buff, 169976K cached
+CPU:  20% usr   6% sys   0% nic  72% idle   0% io   0% irq   0% sirq
+Load average: 5.38 4.83 4.43 1/298 24981
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[0m
+ 1032  1022 root     S     686m 153%  11% vispeech
+15028     1 root     S    1331m 297%   9% {mixpad_gui} /oem/app/flutter-gui/gui_
+24981 24722 root     R     2424   1%   4% top -n 1
+ 1712     1 root     S    1887m 421%   2% /oem/ember-host/bin/ember-host -t 1
+   37     2 root     SW       0   0%   2% [cfinteractive]
+ 1033  1022 root     S    2302m 514%   0% vifamily
+ 1764  1712 root     S    1686m 376%   0% /oem/ember-host/bin/ember-host -t 1
+ 2873  1022 root     S    1363m 304%   0% mixpad_music
+ 1029  1022 root     S    1150m 257%   0% system_manager
+ 1030  1022 root     S     944m 211%   0% vicenter
+ 1034  1022 root     S     596m 133%   0% guiservice
+ 1031  1022 root     S     528m 118%   0% audio_manager
+  693     1 root     S     244m  54%   0% /usr/bin/adbd
+ 1001     1 root     S    77928  17%   0% /oem/ember-host/bin/host_http_ota
+ 1022     1 root     S    76688  17%   0% ./monitor
+ 1007     1 root     S    75684  16%   0% proxy_system_daemon
+  619     1 root     S    71916  16%   0% /usr/sbin/ntpd -g
+ 1136     1 root     S     5912   1%   0% wpa_supplicant -B -i wlan0 -c /userdat
+  631     1 root     S     5312   1%   0% /usr/sbin/sshd
+24346   944 root     S     5088   1%   0% sleep 180
+vispeech:VmRSS=49628;VmData=684960
+vifamily:VmRSS=33652;VmData=2344644
+/oem/app/flutter-gui/gui_program/mixpad_gui:VmRSS=117596;VmData=1241568
+system_manager:VmRSS=7088;VmData=1164152
+vicenter:VmRSS=16356;VmData=959488
+audio_manager:VmRSS=6168;VmData=527564
+guiservice:VmRSS=5128;VmData=598900
+mixpad_music:VmRSS=15420;VmData=1386444
+/oem/ember-host/bin/ember-host:VmRSS=2344;VmData=1714144
+[H[JMem: 451112K used, 7192K free, 134892K shrd, 4568K buff, 169984K cached
+CPU:  22% usr   6% sys   0% nic  71% idle   0% io   0% irq   0% sirq
+Load average: 5.38 4.83 4.43 2/295 25046
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[0m
+ 1032  1022 root     S     686m 153%  13% vispeech
+15028     1 root     S    1331m 297%   9% {mixpad_gui} /oem/app/flutter-gui/gui_
+ 1712     1 root     S    1887m 421%   2% /oem/ember-host/bin/ember-host -t 1
+25046 24722 root     R     2424   1%   2% top -n 1
+  724     2 root     SW       0   0%   2% [ksdioirqd/mmc0]
+ 1033  1022 root     S    2302m 514%   0% vifamily
+ 1764  1712 root     S    1686m 376%   0% /oem/ember-host/bin/ember-host -t 1
+ 2873  1022 root     S    1363m 304%   0% mixpad_music
+ 1029  1022 root     S    1150m 257%   0% system_manager
+ 1030  1022 root     S     944m 211%   0% vicenter
+ 1034  1022 root     S     596m 133%   0% guiservice
+ 1031  1022 root     S     528m 118%   0% audio_manager
+  693     1 root     S     244m  54%   0% /usr/bin/adbd
+ 1001     1 root     S    77928  17%   0% /oem/ember-host/bin/host_http_ota
+ 1022     1 root     S    76688  17%   0% ./monitor
+ 1007     1 root     S    75684  16%   0% proxy_system_daemon
+  619     1 root     S    71916  16%   0% /usr/sbin/ntpd -g
+ 1136     1 root     S     5912   1%   0% wpa_supplicant -B -i wlan0 -c /userdat
+  631     1 root     S     5312   1%   0% /usr/sbin/sshd
+24346   944 root     S     5088   1%   0% sleep 180
+vispeech:VmRSS=49628;VmData=684960
+vifamily:VmRSS=33652;VmData=2344644
+/oem/app/flutter-gui/gui_program/mixpad_gui:VmRSS=117596;VmData=1241568
+system_manager:VmRSS=7088;VmData=1164152
+vicenter:VmRSS=16356;VmData=959488
+audio_manager:VmRSS=6168;VmData=527564
+guiservice:VmRSS=5128;VmData=598900
+mixpad_music:VmRSS=15420;VmData=1386444
+/oem/ember-host/bin/ember-host:VmRSS=2344;VmData=1714144
+[H[JMem: 451360K used, 6944K free, 134892K shrd, 4568K buff, 169984K cached
+CPU:  28% usr   6% sys   0% nic  64% idle   0% io   0% irq   0% sirq
+Load average: 5.38 4.83 4.43 1/295 25105
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[0m
+ 1032  1022 root     S     686m 153%  18% vispeech
+15028     1 root     S    1331m 297%   9% {mixpad_gui} /oem/app/flutter-gui/gui_
+ 1712     1 root     S    1887m 421%   2% /oem/ember-host/bin/ember-host -t 1
+25105 24722 root     R     2424   1%   2% top -n 1
+   37     2 root     SW       0   0%   2% [cfinteractive]
+24447     2 root     SW<      0   0%   2% [kworker/u9:0]
+ 1033  1022 root     S    2302m 514%   0% vifamily
+ 1764  1712 root     S    1686m 376%   0% /oem/ember-host/bin/ember-host -t 1
+ 2873  1022 root     S    1363m 304%   0% mixpad_music
+ 1029  1022 root     S    1150m 257%   0% system_manager
+ 1030  1022 root     S     944m 211%   0% vicenter
+ 1034  1022 root     S     596m 133%   0% guiservice
+ 1031  1022 root     S     528m 118%   0% audio_manager
+  693     1 root     S     244m  54%   0% /usr/bin/adbd
+ 1001     1 root     S    77928  17%   0% /oem/ember-host/bin/host_http_ota
+ 1022     1 root     S    76688  17%   0% ./monitor
+ 1007     1 root     S    75684  16%   0% proxy_system_daemon
+  619     1 root     S    71916  16%   0% /usr/sbin/ntpd -g
+ 1136     1 root     S     5912   1%   0% wpa_supplicant -B -i wlan0 -c /userdat
+  631     1 root     S     5312   1%   0% /usr/sbin/sshd
+vispeech:VmRSS=49628;VmData=684960
+vifamily:VmRSS=33652;VmData=2344644
+/oem/app/flutter-gui/gui_program/mixpad_gui:VmRSS=117596;VmData=1241568
+system_manager:VmRSS=7088;VmData=1164152
+vicenter:VmRSS=16356;VmData=959488
+audio_manager:VmRSS=6168;VmData=527564
+guiservice:VmRSS=5128;VmData=598900
+mixpad_music:VmRSS=15420;VmData=1386444
+/oem/ember-host/bin/ember-host:VmRSS=2344;VmData=1714144
+[H[JMem: 451376K used, 6928K free, 134896K shrd, 4568K buff, 169988K cached
+CPU:  25% usr   6% sys   0% nic  67% idle   0% io   0% irq   0% sirq
+Load average: 5.38 4.83 4.43 1/296 25165
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[0m
+ 1032  1022 root     S     686m 153%  14% vispeech
+15028     1 root     S    1331m 297%  12% {mixpad_gui} /oem/app/flutter-gui/gui_
+25165 24722 root     R     2424   1%   2% top -n 1
+21789     2 root     SW<      0   0%   2% [kworker/u9:2]
+ 1033  1022 root     S    2302m 514%   0% vifamily
+ 1712     1 root     S    1887m 421%   0% /oem/ember-host/bin/ember-host -t 1
+ 1764  1712 root     S    1686m 376%   0% /oem/ember-host/bin/ember-host -t 1
+ 2873  1022 root     S    1363m 304%   0% mixpad_music
+ 1029  1022 root     S    1150m 257%   0% system_manager
+ 1030  1022 root     S     944m 211%   0% vicenter
+ 1034  1022 root     S     596m 133%   0% guiservice
+ 1031  1022 root     S     528m 118%   0% audio_manager
+  693     1 root     S     244m  54%   0% /usr/bin/adbd
+ 1001     1 root     S    77928  17%   0% /oem/ember-host/bin/host_http_ota
+ 1022     1 root     S    76688  17%   0% ./monitor
+ 1007     1 root     S    75684  16%   0% proxy_system_daemon
+  619     1 root     S    71916  16%   0% /usr/sbin/ntpd -g
+ 1136     1 root     S     5912   1%   0% wpa_supplicant -B -i wlan0 -c /userdat
+  631     1 root     S     5312   1%   0% /usr/sbin/sshd
+24346   944 root     S     5088   1%   0% sleep 180
+vispeech:VmRSS=49628;VmData=684960
+vifamily:VmRSS=33652;VmData=2344644
+/oem/app/flutter-gui/gui_program/mixpad_gui:VmRSS=117596;VmData=1241568
+system_manager:VmRSS=7088;VmData=1164152
+vicenter:VmRSS=16356;VmData=959488
+audio_manager:VmRSS=6168;VmData=527564
+guiservice:VmRSS=5128;VmData=598900
+mixpad_music:VmRSS=15420;VmData=1386444
+/oem/ember-host/bin/ember-host:VmRSS=2344;VmData=1714144
+[H[JMem: 451004K used, 7300K free, 134896K shrd, 4568K buff, 169988K cached
+CPU:  25% usr   4% sys   0% nic  70% idle   0% io   0% irq   0% sirq
+Load average: 5.35 4.83 4.43 1/296 25232
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[0m
+ 1032  1022 root     S     686m 153%  15% vispeech
+15028     1 root     S    1331m 297%   8% {mixpad_gui} /oem/app/flutter-gui/gui_
+ 1712     1 root     S    1887m 421%   4% /oem/ember-host/bin/ember-host -t 1
+25232 24722 root     R     2424   1%   2% top -n 1
+ 1033  1022 root     S    2302m 514%   0% vifamily
+ 1764  1712 root     S    1686m 376%   0% /oem/ember-host/bin/ember-host -t 1
+ 2873  1022 root     S    1363m 304%   0% mixpad_music
+ 1029  1022 root     S    1150m 257%   0% system_manager
+ 1030  1022 root     S     944m 211%   0% vicenter
+ 1034  1022 root     S     596m 133%   0% guiservice
+ 1031  1022 root     S     528m 118%   0% audio_manager
+  693     1 root     S     244m  54%   0% /usr/bin/adbd
+ 1001     1 root     S    77928  17%   0% /oem/ember-host/bin/host_http_ota
+ 1022     1 root     S    76688  17%   0% ./monitor
+ 1007     1 root     S    75684  16%   0% proxy_system_daemon
+  619     1 root     S    71916  16%   0% /usr/sbin/ntpd -g
+ 1136     1 root     S     5912   1%   0% wpa_supplicant -B -i wlan0 -c /userdat
+  631     1 root     S     5312   1%   0% /usr/sbin/sshd
+24346   944 root     S     5088   1%   0% sleep 180
+24601 15029 root     S     5088   1%   0% sleep 30
+vispeech:VmRSS=49628;VmData=684960
+vifamily:VmRSS=33652;VmData=2344644
+/oem/app/flutter-gui/gui_program/mixpad_gui:VmRSS=117596;VmData=1241568
+system_manager:VmRSS=7088;VmData=1164152
+vicenter:VmRSS=16356;VmData=959488
+audio_manager:VmRSS=6168;VmData=527564
+guiservice:VmRSS=5128;VmData=598900
+mixpad_music:VmRSS=15420;VmData=1386444
+/oem/ember-host/bin/ember-host:VmRSS=2344;VmData=1714144
