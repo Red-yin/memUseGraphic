@@ -17,8 +17,12 @@ class DataDraw:
     def __init__():
         pass
 
+print(sys.argv)
+file_path = "./mem.txt"
+if len(sys.argv) > 1:
+    file_path = sys.argv[1]
 
-fp = open("./mem.txt", "r", errors='ignore', encoding='utf-8')
+fp = open(file_path, "r", errors='ignore', encoding='utf-8')
 line = fp.readline()
 #data = set()
 #data = list()
@@ -29,7 +33,7 @@ mem_data = dict()
 show_array = ['usr','sys','nic','idle','io','irq','sirq']
 hide_array = ['nic','idle','irq','sirq','usr','sys']
 #proc_array = ["vispeech","/oem/app/flutter-gui/gui_program/mixpad_gui","vicenter","audio_manager"]
-proc_array = ["vispeech","vifamily","/oem/app/flutter-gui/gui_program/mixpad_gui","system_manager","vicenter","audio_manager","guiservice","mixpad_music","/oem/ember-host/bin/ember-host"]
+proc_array = ["vispeech","vifamily","/oem/app/flutter-gui/gui_program/mixpad_gui","system_manager","vicenter","audio_manager","guiservice","mixpad_music","/oem/ember-host/bin/ember-host","dbus-daemon"]
 proc_mem_names = ["VmRSS", "VmData"]
 #['usr','sys','nic','idle','io','irq','sirq']
 #['used','free','shrd','buff','cached']
@@ -49,15 +53,10 @@ while line is not None:
             elif(arr2[1] == 'free'):
                 free = num
                 continue
-            else:
-                s += num
             if arr2[1] not in data:
                 data[arr2[1]] = list()
             data[arr2[1]].append(num)
         total = free + used
-        if 'sum' not in data:
-            data['sum'] = list()
-        data['sum'].append(s)
         if 'total' not in data:
             data['total'] = list()
         data['total'].append(total)
@@ -81,12 +80,16 @@ while line is not None:
                     mem_data[name] = dict()
                 arr0 = line.split(':')
                 arr1 = arr0[1].split(';')
+                s = 0
                 for m in arr1:
                     arr2 = m.split('=')
+                    if len(arr2) < 2:
+                        continue
                     if arr2[0] not in mem_data[name]:
                         mem_data[name][arr2[0]] = list()
                     num = int(arr2[1].strip('\n'))
                     mem_data[name][arr2[0]].append(num)
+
 
 
     line = fp.readline()
@@ -117,12 +120,12 @@ for key in cpu_data:
     if key not in hide_array:
         a2.plot(cpu_data[key], label = key)
 
-color_array = ["aliceblue", "black", "blue", "brown", "coral", "tomato", "pink", "yellow", "green", "red"]
+color_array = ["aliceblue", "black", "blue", "brown", "coral", "tomato", "pink", "yellow", "green", "red", "gray"]
 i = 0
 for key in mem_data:
     i = i+1
-    #vm = "VmRSS" 
-    vm = "VmData"
+    vm = "VmRSS" 
+    #vm = "VmData"
     a3.plot(mem_data[key][vm], label = key+"." + vm, color = color_array[i])
     """
     for k in mem_data[key]:
