@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import MultipleLocator
+from matplotlib import dates
+
 import os
 import sys
 import time
@@ -29,11 +31,12 @@ line = fp.readline()
 data = dict()
 cpu_data = dict()
 mem_data = dict()
+time_data = dict()
 
 show_array = ['usr','sys','nic','idle','io','irq','sirq']
 hide_array = ['nic','idle','irq','sirq','usr','sys']
 #proc_array = ["vispeech","/oem/app/flutter-gui/gui_program/mixpad_gui","vicenter","audio_manager"]
-proc_array = ["vispeech","vifamily","/oem/app/flutter-gui/gui_program/mixpad_gui","system_manager","vicenter","audio_manager","guiservice","mixpad_music","/oem/ember-host/bin/ember-host","dbus-daemon"]
+proc_array = ["vispeech","vifamily","mixpad_gui","system_manager","vicenter","audio_manager","guiservice","mixpad_music","ember-host","dbus-daemon"]
 proc_mem_names = ["VmRSS", "VmData"]
 #['usr','sys','nic','idle','io','irq','sirq']
 #['used','free','shrd','buff','cached']
@@ -73,9 +76,29 @@ while line is not None:
                 cpu_data[arr2[1]] = list()
             num = int(arr2[0].strip('%'))
             cpu_data[arr2[1]].append(num)
+    elif line.find('stamp') != -1:
+        if line.startswith('datestamp'):
+            #日期记录数据
+            arr0 = line.split(': ')
+            if len(arr0) < 2:
+                continue
+            arr1 = arr0[1].split()
+            if len(arr1) < 4:
+                continue
+            if 'datestamp' not in time_data:
+                time_data['datestamp'] = list()
+            time_data['datestamp'].append(arr1[3])
+        elif line.startswith('timestamp'):
+            #时间戳记录数据
+            arr0 = line.split(':')
+            if len(arr0) < 2:
+                continue
+            if 'timestamp' not in time_data:
+                time_data['timestamp'] = list()
+            time_data['timestamp'].append(arr0[1])
     else:
         for name in proc_array:
-            if line.startswith(name):
+            if line.find(name) != -1:
                 if name not in mem_data:
                     mem_data[name] = dict()
                 arr0 = line.split(':')
@@ -97,15 +120,16 @@ while line is not None:
         print("not read content")
         break
 
+
 #print("format data: ", mem_data)
 fig = plt.figure()
-a1 = fig.add_subplot(3,1,1)
-a2 = fig.add_subplot(3,1,2)
-a3 = fig.add_subplot(3,1,3)
+#a1 = fig.add_subplot(3,1,1)
+#a2 = fig.add_subplot(3,1,2)
+a3 = fig.add_subplot(1,1,1)
 for key in data:
     if key in hide_array:
         continue
-    a1.plot(data[key], label = key)
+    #a1.plot(data[key], label = key)
     """
     num = max(data[key])
     if(num<80000):
@@ -116,25 +140,38 @@ for key in data:
         a2.plot(data[key], label = key)
     """
 
+    """
 for key in cpu_data:
     if key not in hide_array:
         a2.plot(cpu_data[key], label = key)
 
+    """
 color_array = ["aliceblue", "black", "blue", "brown", "coral", "tomato", "pink", "yellow", "green", "red", "gray"]
 i = 0
 for key in mem_data:
     i = i+1
     vm = "VmRSS" 
     #vm = "VmData"
-    a3.plot(mem_data[key][vm], label = key+"." + vm, color = color_array[i])
+    l = len(mem_data[key][vm])
+    t_len = len(time_data['datestamp'])
+    while len(time_data['datestamp']) > l:
+        time_data['datestamp'].pop()
+    while len(mem_data[key][vm]) > t_len:
+        mem_data[key][vm].pop()
+    a3.plot(time_data['datestamp'], mem_data[key][vm], label = key+"." + vm, color = color_array[i])
     """
     for k in mem_data[key]:
         a3.plot(mem_data[key][k], label = key+"."+k, color = color_array[i])
     """
 
-y_major_locator=MultipleLocator(5000)
-a1.yaxis.set_major_locator(y_major_locator)
-a1.legend()
-a2.legend()
+x_major_locator=MultipleLocator(180)
+y_major_locator=MultipleLocator(1000)
+#a1.yaxis.set_major_locator(y_major_locator)
+#a1.legend()
+#a2.legend()
+a3.yaxis.set_major_locator(y_major_locator)
+a3.xaxis.set_major_locator(x_major_locator)
 a3.legend()
+plt.ylim(100, 220000)
+a3.grid()
 plt.show()

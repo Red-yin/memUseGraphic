@@ -27,6 +27,9 @@ while :
 do
 	echo "$num times"
 	let num++ 
+	#date +%s '+%Y%m%d%H%M%S'
+	echo "datestamp: "`date` >> $filePath
+	echo "timestamp: "`date +%s` >> $filePath
 	top -b -n 1 | awk '{ if($1=="Mem:") print $0;else if($1=="CPU:") print $0 }' >> $filePath
 	scanProcMemory
 	sleep $interval
