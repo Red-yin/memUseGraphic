@@ -8,14 +8,12 @@ import sys
 import time
 
 class DataFormat:
-    def __init__():
-        pass
-
-class DataInput:
+    #输入数据格式化
     def __init__():
         pass
 
 class DataDraw:
+    #格式化数据可视化
     def __init__():
         pass
 
@@ -102,6 +100,8 @@ while line is not None:
                 if name not in mem_data:
                     mem_data[name] = dict()
                 arr0 = line.split(':')
+                if len(arr0) < 2:
+                    continue
                 arr1 = arr0[1].split(';')
                 s = 0
                 for m in arr1:
